@@ -1,0 +1,4 @@
+Changes: In @P4/tests/profile-follow/follow-state.spec.ts: The test is useful, but it should create its own user instead of modifying the shared practice-reader account. In @P4/tests/profile-follow/follow-visibility.spec.ts: The test checks useful follow and feed behavior, but it modifies the shared practice-editor account. It should create its own user through the API
+New tests: Only one test checks comments. Add 2 API tests in P4/tests/comments.spec.ts: one to verify that a signed-in user can post a comment successfully, and another to verify that the saved comment appears when fetching the article again.
+Material: @P4/API.md @P4/tests/e2e.spec.ts Make users and data by API, and clean up, like these tests.
+Rules: Write the tests from API.md only. Do not read the app's code in P4/app. Change nothing else. Do not run the tests.
